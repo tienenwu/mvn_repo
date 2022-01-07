@@ -1,0 +1,97 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.itsherpa.mvn",
+    "module": "ItsherpaSDK",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.5.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ItsherpaSDK-1.0.0.aar",
+          "url": "ItsherpaSDK-1.0.0.aar",
+          "size": 74345,
+          "sha512": "bda27d07c19e608f88552e144a3d20e8dbd6786b2e82711a39a8af4d8eaa98fd90f4be7d80034eb4814be74e0f16d23246831de80dda8037dfb0f5a97d40f584",
+          "sha256": "de907297fefbb386018b26ed9871a78eb2b39079e271e0455764294643a59fe8",
+          "sha1": "525d0760caf64db03be7281efd1186c753ed4868",
+          "md5": "aa6f4876c61a6a30fb80d228a7f99ba2"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.5.20"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ItsherpaSDK-1.0.0.aar",
+          "url": "ItsherpaSDK-1.0.0.aar",
+          "size": 74345,
+          "sha512": "bda27d07c19e608f88552e144a3d20e8dbd6786b2e82711a39a8af4d8eaa98fd90f4be7d80034eb4814be74e0f16d23246831de80dda8037dfb0f5a97d40f584",
+          "sha256": "de907297fefbb386018b26ed9871a78eb2b39079e271e0455764294643a59fe8",
+          "sha1": "525d0760caf64db03be7281efd1186c753ed4868",
+          "md5": "aa6f4876c61a6a30fb80d228a7f99ba2"
+        }
+      ]
+    }
+  ]
+}
